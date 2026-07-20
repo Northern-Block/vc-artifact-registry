@@ -15,14 +15,13 @@ If a schema or artifact needs to change, publish a **new** file (new version, ne
 ```
 vc-artifact-registry/
 ├── core/
-│   └── vocab/
-│       └── vocab.jsonld
-│           # ONE shared JSON-LD vocabulary for the whole repo, not per-environment,
-│           # not per-LOB. Referenced by fragment from context files, e.g.:
-│           #   https://{GITHUB_PAGES_DOMAIN}/core/vocab/vocab.jsonld#country
-│           # `core/` is the container for ANY environment-agnostic content —
-│           # not just vocab. Rule: a top-level folder in this repo is either an
-│           # environment name, or `core`. Nothing else goes at the root.
+│   └── vocab.jsonld
+│       # ONE shared JSON-LD vocabulary for the whole repo, not per-environment,
+│       # not per-LOB. Referenced by fragment from context files, e.g.:
+│       #   https://{GITHUB_PAGES_DOMAIN}/core/vocab.jsonld#country
+│       # `core/` is the container for ANY environment-agnostic content —
+│       # not just vocab. Rule: a top-level folder in this repo is either an
+│       # environment name, or `core`. Nothing else goes at the root.
 │
 ├── dev/                                          ← environment (from GITHUB_PATH_ENVIRONMENT)
 │   └── orga-adarsh-otp-tenant1/                  ← lobEcoSystemName (tenant-chosen at LOB registration)
@@ -38,7 +37,7 @@ vc-artifact-registry/
 │           ├── context/
 │           │   └── insurance-policy-1778856680321-1.0.jsonld
 │           │       # JSON-LD @context. Maps each schema attribute name to a semantic
-│           │       # IRI/term (uses core/vocab/vocab.jsonld + external vocabularies). This is
+│           │       # IRI/term (uses core/vocab.jsonld + external vocabularies). This is
 │           │       # what a JSON-LD credential's "@context" array points to.
 │           │
 │           ├── w3cSchema/
@@ -95,9 +94,9 @@ The top-level folder is the deployment environment that published the artifact. 
 
 ### `core/`
 
-`core/` holds anything environment-agnostic — content that's identical across dev/qa/prod and shouldn't be duplicated per environment. Today that's just `core/vocab/vocab.jsonld`, a shared JSON-LD vocabulary referenced by term fragments (e.g. `vocab.jsonld#country`, `#locality`, `#religion`) from generated `@context` files — but any future global asset belongs here too, not at the repo root.
+`core/` holds anything environment-agnostic — content that's identical across dev/qa/prod and shouldn't be duplicated per environment. Today that's just `core/vocab.jsonld`, a shared JSON-LD vocabulary referenced by term fragments (e.g. `vocab.jsonld#country`, `#locality`, `#religion`) from generated `@context` files — but any future global asset belongs here too, not at the repo root.
 
-`core/vocab/vocab.jsonld` is a byte-identical duplicate of `northern-block/test-jsonld/vocab.jsonld`, carried over with the same term fragments so that credentials issued against the old repo and the new repo resolve to the same semantic terms.
+`core/vocab.jsonld` is a byte-identical duplicate of `northern-block/test-jsonld/vocab.jsonld`, carried over with the same term fragments so that credentials issued against the old repo and the new repo resolve to the same semantic terms.
 
 ### Per-LOB folders
 
