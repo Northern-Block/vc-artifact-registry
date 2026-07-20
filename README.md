@@ -6,7 +6,7 @@ Static file store for Verifiable Credential artifacts published by eAPI's `crede
 
 **Once a file is published here, it must never be edited, moved, renamed, or deleted** (the one exception is `status/` files — see below).
 
-Every file's GitHub Pages URL (`https://{owner}.github.io/vc-artifact-registry/...`) is permanently embedded inside credentials already issued to holders' wallets — in the credential's `credentialSchema`, `@context`, VCT `id`/`schema`/`jsonLdContext`, and `bitStringStatusListURL` fields. A wallet cannot be updated after issuance. Moving or changing a published file breaks every credential that references it, with no way to fix it after the fact.
+Every file's GitHub Pages URL (`https://{GITHUB_PAGES_DOMAIN}/...` — domain root, custom domain, **no** `/vc-artifact-registry` segment) is permanently embedded inside credentials already issued to holders' wallets — in the credential's `credentialSchema`, `@context`, VCT `id`/`schema`/`jsonLdContext`, and `bitStringStatusListURL` fields. A wallet cannot be updated after issuance. Moving or changing a published file breaks every credential that references it, with no way to fix it after the fact.
 
 If a schema or artifact needs to change, publish a **new** file (new version, new timestamp suffix) — never overwrite an existing one.
 
@@ -14,11 +14,15 @@ If a schema or artifact needs to change, publish a **new** file (new version, ne
 
 ```
 vc-artifact-registry/
-├── vocab/
-│   └── vocab.jsonld
-│       # ONE shared JSON-LD vocabulary for the whole repo, not per-environment,
-│       # not per-LOB. Referenced by fragment from context files, e.g.:
-│       #   https://{owner}.github.io/vc-artifact-registry/vocab/vocab.jsonld#country
+├── core/
+│   └── vocab/
+│       └── vocab.jsonld
+│           # ONE shared JSON-LD vocabulary for the whole repo, not per-environment,
+│           # not per-LOB. Referenced by fragment from context files, e.g.:
+│           #   https://{GITHUB_PAGES_DOMAIN}/core/vocab/vocab.jsonld#country
+│           # `core/` is the container for ANY environment-agnostic content —
+│           # not just vocab. Rule: a top-level folder in this repo is either an
+│           # environment name, or `core`. Nothing else goes at the root.
 │
 ├── dev/                                          ← environment (from GITHUB_PATH_ENVIRONMENT)
 │   └── orga-adarsh-otp-tenant1/                  ← lobEcoSystemName (tenant-chosen at LOB registration)
@@ -34,7 +38,7 @@ vc-artifact-registry/
 │           ├── context/
 │           │   └── insurance-policy-1778856680321-1.0.jsonld
 │           │       # JSON-LD @context. Maps each schema attribute name to a semantic
-│           │       # IRI/term (uses vocab/vocab.jsonld + external vocabularies). This is
+│           │       # IRI/term (uses core/vocab/vocab.jsonld + external vocabularies). This is
 │           │       # what a JSON-LD credential's "@context" array points to.
 │           │
 │           ├── w3cSchema/
@@ -89,11 +93,11 @@ vc-artifact-registry/
 
 The top-level folder is the deployment environment that published the artifact. It comes from the `credential` service's `GITHUB_PATH_ENVIRONMENT` env var — by convention one of `dev`, `qa`, `prod`, `sandbox`, `stg`, `cs-prd`, though this is not enforced by an enum in code; whatever string is configured for a given deployment is what gets written.
 
-### `vocab/`
+### `core/`
 
-`vocab/vocab.jsonld` is a shared, environment-agnostic JSON-LD vocabulary referenced by term fragments (e.g. `vocab.jsonld#country`, `#locality`, `#religion`) from generated `@context` files. It is not nested under any environment because its terms are identical across dev/qa/prod — there is exactly one copy for the whole repo.
+`core/` holds anything environment-agnostic — content that's identical across dev/qa/prod and shouldn't be duplicated per environment. Today that's just `core/vocab/vocab.jsonld`, a shared JSON-LD vocabulary referenced by term fragments (e.g. `vocab.jsonld#country`, `#locality`, `#religion`) from generated `@context` files — but any future global asset belongs here too, not at the repo root.
 
-This file is a byte-identical duplicate of `northern-block/test-jsonld/vocab.jsonld`, carried over with the same term fragments so that credentials issued against the old repo and the new repo resolve to the same semantic terms.
+`core/vocab/vocab.jsonld` is a byte-identical duplicate of `northern-block/test-jsonld/vocab.jsonld`, carried over with the same term fragments so that credentials issued against the old repo and the new repo resolve to the same semantic terms.
 
 ### Per-LOB folders
 
@@ -101,7 +105,9 @@ Below the environment, structure is unchanged from the legacy `northern-block` l
 
 ## Publishing
 
-There is no build step here — this repo *is* the GitHub Pages content. Files land under `https://{owner}.github.io/vc-artifact-registry/<path>` as soon as they're merged to `main`. No custom domain (`CNAME`) is configured.
+There is no build step here — this repo *is* the GitHub Pages content. Files land under `https://{GITHUB_PAGES_DOMAIN}/<path>` (domain root, no `/vc-artifact-registry` segment) as soon as they're merged to `main`.
+
+**Requires a `CNAME` file + custom domain configured in this repo's Settings → Pages** for `GITHUB_PAGES_DOMAIN` to actually resolve — not yet set up as of this writing. Until that's done, generated URLs will not be reachable; do not let `credential` publish real artifacts against this repo before it is.
 
 
 ## Who writes here
