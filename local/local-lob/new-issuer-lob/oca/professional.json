@@ -1,0 +1,152 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/local/local-lob/new-issuer-lob/oca/professional.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "flagged_attributes": [
+      "licenseType",
+      "licenseName",
+      "attributes.name",
+      "attributes.value",
+      "skills.name",
+      "skills.level"
+    ],
+    "attributes": {
+      "licenseType": "Text",
+      "licenseName": "Text",
+      "attributes.name": "Text",
+      "attributes.value": "Text",
+      "skills.name": "Text",
+      "skills.level": "Text"
+    }
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "professional",
+      "description": "A verifiable credential representing a comprehensive professional covering life, health, property, and auto coverage types.",
+      "issuer": "Global Insurance Authority",
+      "issuer_url": "https://example.com",
+      "credential_support_url": "https://example.com/support/insurance-policy"
+    },
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "licenseType": "utf-8",
+        "licenseName": "utf-8",
+        "attributes.name": "utf-8",
+        "attributes.value": "utf-8",
+        "skills.name": "utf-8",
+        "skills.level": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "licenseType": "License Type",
+        "licenseName": "License Name",
+        "attributes.name": "Name",
+        "attributes.value": "Value",
+        "skills.name": "Name",
+        "skills.level": "Level"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "license": "License Information",
+        "attributes": "Attributes Information",
+        "skills": "Skills Information"
+      },
+      "attribute_categories": {
+        "licenseType": "license",
+        "licenseName": "license",
+        "attributes.name": "attributes",
+        "attributes.value": "attributes",
+        "skills.name": "skills",
+        "skills.level": "skills"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "licenseType": "License Type",
+        "licenseName": "License Name",
+        "attributes.name": "Name",
+        "attributes.value": "Value",
+        "skills.name": "Name",
+        "skills.level": "Level"
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {}
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {}
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "licenseType",
+        "licenseName",
+        "attributes.name",
+        "attributes.value",
+        "skills.name",
+        "skills.level"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "licenseType",
+        "licenseName"
+      ],
+      "details": [
+        "attributes.name",
+        "attributes.value",
+        "skills.name",
+        "skills.level"
+      ]
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#0D3B66",
+      "secondary_background_color": "#E8F1FB",
+      "logo": "https://example.com/assets/insurance-logo.png",
+      "primary_attribute": "licenseType",
+      "secondary_attribute": "licenseName"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "professional",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": [
+            "licenseType",
+            "licenseName"
+          ]
+        },
+        "back": {
+          "fields": [
+            "attributes.name",
+            "attributes.value",
+            "skills.name",
+            "skills.level"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#0D3B66",
+        "secondary_color": "#E8F1FB",
+        "accent_color": "#1A78C2"
+      }
+    }
+  ]
+}
