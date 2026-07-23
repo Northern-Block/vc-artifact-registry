@@ -731,5 +731,17 @@
   "value": {
     "id": "ext:value",
     "label": "value"
+  },
+  "licenseType": {
+    "id": "ext:licenseType",
+    "label": "licenseType"
+  },
+  "licenseName": {
+    "id": "ext:licenseName",
+    "label": "licenseName"
+  },
+  "level": {
+    "id": "ext:level",
+    "label": "level"
   }
 }
