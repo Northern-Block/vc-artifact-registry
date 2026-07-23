@@ -743,5 +743,13 @@
   "level": {
     "id": "ext:level",
     "label": "level"
+  },
+  "attributes": {
+    "id": "ext:attributes",
+    "label": "attributes"
+  },
+  "skills": {
+    "id": "ext:skills",
+    "label": "skills"
   }
 }
