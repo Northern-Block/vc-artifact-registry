@@ -5,18 +5,18 @@
     "flagged_attributes": [
       "licenseType",
       "licenseName",
-      "attributes.name",
-      "attributes.value",
-      "skills.name",
-      "skills.level"
+      "attributes.LicenseAttributes.name",
+      "attributes.LicenseAttributes.value",
+      "skills.LicenseSkill.name",
+      "skills.LicenseSkill.level"
     ],
     "attributes": {
       "licenseType": "Text",
       "licenseName": "Text",
-      "attributes.name": "Text",
-      "attributes.value": "Text",
-      "skills.name": "Text",
-      "skills.level": "Text"
+      "attributes.LicenseAttributes.name": "Text",
+      "attributes.LicenseAttributes.value": "Text",
+      "skills.LicenseSkill.name": "Text",
+      "skills.LicenseSkill.level": "Text"
     }
   },
   "overlays": [
@@ -34,10 +34,10 @@
       "attribute_character_encoding": {
         "licenseType": "utf-8",
         "licenseName": "utf-8",
-        "attributes.name": "utf-8",
-        "attributes.value": "utf-8",
-        "skills.name": "utf-8",
-        "skills.level": "utf-8"
+        "attributes.LicenseAttributes.name": "utf-8",
+        "attributes.LicenseAttributes.value": "utf-8",
+        "skills.LicenseSkill.name": "utf-8",
+        "skills.LicenseSkill.level": "utf-8"
       }
     },
     {
@@ -46,10 +46,10 @@
       "attribute_labels": {
         "licenseType": "License Type",
         "licenseName": "License Name",
-        "attributes.name": "Name",
-        "attributes.value": "Value",
-        "skills.name": "Name",
-        "skills.level": "Level"
+        "attributes.LicenseAttributes.name": "Name",
+        "attributes.LicenseAttributes.value": "Value",
+        "skills.LicenseSkill.name": "Name",
+        "skills.LicenseSkill.level": "Level"
       }
     },
     {
@@ -63,10 +63,10 @@
       "attribute_categories": {
         "licenseType": "license",
         "licenseName": "license",
-        "attributes.name": "attributes",
-        "attributes.value": "attributes",
-        "skills.name": "skills",
-        "skills.level": "skills"
+        "attributes.LicenseAttributes.name": "attributes",
+        "attributes.LicenseAttributes.value": "attributes",
+        "skills.LicenseSkill.name": "skills",
+        "skills.LicenseSkill.level": "skills"
       }
     },
     {
@@ -75,10 +75,10 @@
       "attribute_information": {
         "licenseType": "License Type",
         "licenseName": "License Name",
-        "attributes.name": "Name",
-        "attributes.value": "Value",
-        "skills.name": "Name",
-        "skills.level": "Level"
+        "attributes.LicenseAttributes.name": "Name",
+        "attributes.LicenseAttributes.value": "Value",
+        "skills.LicenseSkill.name": "Name",
+        "skills.LicenseSkill.level": "Level"
       }
     },
     {
@@ -94,10 +94,10 @@
       "order": [
         "licenseType",
         "licenseName",
-        "attributes.name",
-        "attributes.value",
-        "skills.name",
-        "skills.level"
+        "attributes.LicenseAttributes.name",
+        "attributes.LicenseAttributes.value",
+        "skills.LicenseSkill.name",
+        "skills.LicenseSkill.level"
       ]
     },
     {
@@ -107,10 +107,10 @@
         "licenseName"
       ],
       "details": [
-        "attributes.name",
-        "attributes.value",
-        "skills.name",
-        "skills.level"
+        "attributes.LicenseAttributes.name",
+        "attributes.LicenseAttributes.value",
+        "skills.LicenseSkill.name",
+        "skills.LicenseSkill.level"
       ]
     },
     {
@@ -135,10 +135,10 @@
         },
         "back": {
           "fields": [
-            "attributes.name",
-            "attributes.value",
-            "skills.name",
-            "skills.level"
+            "attributes.LicenseAttributes.name",
+            "attributes.LicenseAttributes.value",
+            "skills.LicenseSkill.name",
+            "skills.LicenseSkill.level"
           ]
         }
       },
