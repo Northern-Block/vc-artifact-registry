@@ -751,5 +751,29 @@
   "skills": {
     "id": "ext:skills",
     "label": "skills"
+  },
+  "category": {
+    "id": "ext:category",
+    "label": "category"
+  },
+  "author": {
+    "id": "ext:author",
+    "label": "author"
+  },
+  "title": {
+    "id": "ext:title",
+    "label": "title"
+  },
+  "price": {
+    "id": "ext:price",
+    "label": "price"
+  },
+  "isbn": {
+    "id": "ext:isbn",
+    "label": "isbn"
+  },
+  "color": {
+    "id": "ext:color",
+    "label": "color"
   }
 }
