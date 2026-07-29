@@ -1,0 +1,148 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/local/local-lob/new-issuer-lob/oca/bookstore.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "flagged_attributes": [
+      "store.book.Book.category",
+      "store.book.Book.author",
+      "store.book.Book.title",
+      "store.book.Book.price",
+      "store.book.Book.isbn",
+      "store.bicycle.color",
+      "store.bicycle.price"
+    ],
+    "attributes": {
+      "store.book.Book.category": "Text",
+      "store.book.Book.author": "Text",
+      "store.book.Book.title": "Text",
+      "store.book.Book.price": "Numeric",
+      "store.book.Book.isbn": "Text",
+      "store.bicycle.color": "Text",
+      "store.bicycle.price": "Numeric"
+    }
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "bookstore",
+      "description": "A verifiable credential representing a bookstore's inventory of books and a bicycle.",
+      "issuer": "Global Bookstore Authority",
+      "issuer_url": "https://example.com",
+      "credential_support_url": "https://example.com/support/bookstore"
+    },
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "store.book.Book.category": "utf-8",
+        "store.book.Book.author": "utf-8",
+        "store.book.Book.title": "utf-8",
+        "store.book.Book.price": "utf-8",
+        "store.book.Book.isbn": "utf-8",
+        "store.bicycle.color": "utf-8",
+        "store.bicycle.price": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "store.book.Book.category": "Category",
+        "store.book.Book.author": "Author",
+        "store.book.Book.title": "Title",
+        "store.book.Book.price": "Price",
+        "store.book.Book.isbn": "ISBN",
+        "store.bicycle.color": "Bicycle Color",
+        "store.bicycle.price": "Bicycle Price"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "book": "Book Information",
+        "bicycle": "Bicycle Information"
+      },
+      "attribute_categories": {
+        "store.book.Book.category": "book",
+        "store.book.Book.author": "book",
+        "store.book.Book.title": "book",
+        "store.book.Book.price": "book",
+        "store.book.Book.isbn": "book",
+        "store.bicycle.color": "bicycle",
+        "store.bicycle.price": "bicycle"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "store.book.Book.category": "Category",
+        "store.book.Book.author": "Author",
+        "store.book.Book.title": "Title",
+        "store.book.Book.price": "Price",
+        "store.book.Book.isbn": "ISBN",
+        "store.bicycle.color": "Bicycle Color",
+        "store.bicycle.price": "Bicycle Price"
+      }
+    },
+    { "type": "spec/overlays/format/1.0", "attribute_formats": {} },
+    { "type": "spec/overlays/standard/1.0", "attribute_standards": {} },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "store.book.Book.category",
+        "store.book.Book.author",
+        "store.book.Book.title",
+        "store.book.Book.price",
+        "store.book.Book.isbn",
+        "store.bicycle.color",
+        "store.bicycle.price"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": ["store.book.Book.title", "store.book.Book.author"],
+      "details": [
+        "store.book.Book.category",
+        "store.book.Book.price",
+        "store.book.Book.isbn",
+        "store.bicycle.color",
+        "store.bicycle.price"
+      ]
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#0D3B66",
+      "secondary_background_color": "#E8F1FB",
+      "logo": "https://example.com/assets/bookstore-logo.png",
+      "primary_attribute": "store.book.Book.title",
+      "secondary_attribute": "store.book.Book.author"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "bookstore",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": ["store.book.Book.title", "store.book.Book.author"]
+        },
+        "back": {
+          "fields": [
+            "store.book.Book.category",
+            "store.book.Book.price",
+            "store.book.Book.isbn",
+            "store.bicycle.color",
+            "store.bicycle.price"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#0D3B66",
+        "secondary_color": "#E8F1FB",
+        "accent_color": "#1A78C2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/local/local-lob/new-issuer-lob/oca/professionalProfile.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "flagged_attributes": [
+      "first_name",
+      "last_name",
+      "email",
+      "phone",
+      "office_affiliation.franchise",
+      "office_affiliation.operating_office",
+      "office_affiliation.operating_address",
+      "office_affiliation.title",
+      "office_affiliation.affiliation_start_year",
+      "license.RealEstateLicense.name",
+      "license.RealEstateLicense.date_of_issue",
+      "license.RealEstateLicense.license_type",
+      "license.RealEstateLicense.id",
+      "license.RealEstateLicense.license_attributes.name",
+      "license.RealEstateLicense.license_attributes.value",
+      "license.MortgageBrokerLicense.name",
+      "license.MortgageBrokerLicense.date_of_issue",
+      "license.MortgageBrokerLicense.license_type",
+      "license.MortgageBrokerLicense.id",
+      "license.MortgageBrokerLicense.license_attributes.name",
+      "license.MortgageBrokerLicense.license_attributes.value"
+    ],
+    "attributes": {
+      "first_name": "Text",
+      "last_name": "Text",
+      "email": "Text",
+      "phone": "Text",
+      "office_affiliation.franchise": "Text",
+      "office_affiliation.operating_office": "Text",
+      "office_affiliation.operating_address": "Text",
+      "office_affiliation.title": "Text",
+      "office_affiliation.affiliation_start_year": "Text",
+      "license.RealEstateLicense.name": "Text",
+      "license.RealEstateLicense.date_of_issue": "Text",
+      "license.RealEstateLicense.license_type": "Text",
+      "license.RealEstateLicense.id": "Text",
+      "license.RealEstateLicense.license_attributes.name": "Text",
+      "license.RealEstateLicense.license_attributes.value": "Text",
+      "license.MortgageBrokerLicense.name": "Text",
+      "license.MortgageBrokerLicense.date_of_issue": "Text",
+      "license.MortgageBrokerLicense.license_type": "Text",
+      "license.MortgageBrokerLicense.id": "Text",
+      "license.MortgageBrokerLicense.license_attributes.name": "Text",
+      "license.MortgageBrokerLicense.license_attributes.value": "Text"
+    }
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "professional",
+      "description": "A verifiable credential representing a comprehensive professional covering life, health, property, and auto coverage types.",
+      "issuer": "Global Insurance Authority",
+      "issuer_url": "https://example.com",
+      "credential_support_url": "https://example.com/support/insurance-policy"
+    },
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "first_name": "utf-8",
+        "last_name": "utf-8",
+        "email": "utf-8",
+        "phone": "utf-8",
+        "office_affiliation.franchise": "utf-8",
+        "office_affiliation.operating_office": "utf-8",
+        "office_affiliation.operating_address": "utf-8",
+        "office_affiliation.title": "utf-8",
+        "office_affiliation.affiliation_start_year": "utf-8",
+        "license.RealEstateLicense.name": "utf-8",
+        "license.RealEstateLicense.date_of_issue": "utf-8",
+        "license.RealEstateLicense.license_type": "utf-8",
+        "license.RealEstateLicense.id": "utf-8",
+        "license.RealEstateLicense.license_attributes.name": "utf-8",
+        "license.RealEstateLicense.license_attributes.value": "utf-8",
+        "license.MortgageBrokerLicense.name": "utf-8",
+        "license.MortgageBrokerLicense.date_of_issue": "utf-8",
+        "license.MortgageBrokerLicense.license_type": "utf-8",
+        "license.MortgageBrokerLicense.id": "utf-8",
+        "license.MortgageBrokerLicense.license_attributes.name": "utf-8",
+        "license.MortgageBrokerLicense.license_attributes.value": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "first_name": "first_name",
+        "last_name": "last_name",
+        "email": "email",
+        "phone": "phone",
+        "office_affiliation.franchise": "office_affiliation.franchise",
+        "office_affiliation.operating_office": "office_affiliation.operating_office",
+        "office_affiliation.operating_address": "office_affiliation.operating_address",
+        "office_affiliation.title": "office_affiliation.title",
+        "office_affiliation.affiliation_start_year": "office_affiliation.affiliation_start_year",
+        "license.RealEstateLicense.name": "license.RealEstateLicense.name",
+        "license.RealEstateLicense.date_of_issue": "license.RealEstateLicense.date_of_issue",
+        "license.RealEstateLicense.license_type": "license.RealEstateLicense.license_type",
+        "license.RealEstateLicense.id": "license.RealEstateLicense.id",
+        "license.RealEstateLicense.license_attributes.name": "license.RealEstateLicense.license_attributes.name",
+        "license.RealEstateLicense.license_attributes.value": "license.RealEstateLicense.license_attributes.value",
+        "license.MortgageBrokerLicense.name": "license.MortgageBrokerLicense.name",
+        "license.MortgageBrokerLicense.date_of_issue": "license.MortgageBrokerLicense.date_of_issue",
+        "license.MortgageBrokerLicense.license_type": "license.MortgageBrokerLicense.license_type",
+        "license.MortgageBrokerLicense.id": "license.MortgageBrokerLicense.id",
+        "license.MortgageBrokerLicense.license_attributes.name": "license.MortgageBrokerLicense.license_attributes.name",
+        "license.MortgageBrokerLicense.license_attributes.value": "license.MortgageBrokerLicense.license_attributes.value"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "license": "License Information",
+        "attributes": "Attributes Information",
+        "office_affiliation": "Office Affiliation Information"
+      },
+      "attribute_categories": {
+        "first_name": "license",
+        "last_name": "license",
+        "email": "license",
+        "phone": "license",
+        "office_affiliation.franchise": "office_affiliation",
+        "office_affiliation.operating_office": "office_affiliation",
+        "office_affiliation.operating_address": "office_affiliation",
+        "office_affiliation.title": "office_affiliation",
+        "office_affiliation.affiliation_start_year": "office_affiliation",
+        "license.RealEstateLicense.name": "attributes",
+        "license.RealEstateLicense.date_of_issue": "attributes",
+        "license.RealEstateLicense.license_type": "attributes",
+        "license.RealEstateLicense.id": "attributes",
+        "license.RealEstateLicense.license_attributes.name": "attributes",
+        "license.RealEstateLicense.license_attributes.value": "attributes",
+        "license.MortgageBrokerLicense.name": "attributes",
+        "license.MortgageBrokerLicense.date_of_issue": "attributes",
+        "license.MortgageBrokerLicense.license_type": "attributes",
+        "license.MortgageBrokerLicense.id": "attributes",
+        "license.MortgageBrokerLicense.license_attributes.name": "attributes",
+        "license.MortgageBrokerLicense.license_attributes.value": "attributes"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "first_name": "license",
+        "last_name": "license",
+        "email": "license",
+        "phone": "license",
+        "office_affiliation.franchise": "office_affiliation",
+        "office_affiliation.operating_office": "office_affiliation",
+        "office_affiliation.operating_address": "office_affiliation",
+        "office_affiliation.title": "office_affiliation",
+        "office_affiliation.affiliation_start_year": "office_affiliation",
+        "license.RealEstateLicense.name": "attributes",
+        "license.RealEstateLicense.date_of_issue": "attributes",
+        "license.RealEstateLicense.license_type": "attributes",
+        "license.RealEstateLicense.id": "attributes",
+        "license.RealEstateLicense.license_attributes.name": "attributes",
+        "license.RealEstateLicense.license_attributes.value": "attributes",
+        "license.MortgageBrokerLicense.name": "attributes",
+        "license.MortgageBrokerLicense.date_of_issue": "attributes",
+        "license.MortgageBrokerLicense.license_type": "attributes",
+        "license.MortgageBrokerLicense.id": "attributes",
+        "license.MortgageBrokerLicense.license_attributes.name": "attributes",
+        "license.MortgageBrokerLicense.license_attributes.value": "attributes"
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {}
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {}
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "first_name",
+        "last_name",
+        "email",
+        "phone",
+        "office_affiliation.franchise",
+        "office_affiliation.operating_office",
+        "office_affiliation.operating_address",
+        "office_affiliation.title",
+        "office_affiliation.affiliation_start_year",
+        "license.RealEstateLicense.name",
+        "license.RealEstateLicense.date_of_issue",
+        "license.RealEstateLicense.license_type",
+        "license.RealEstateLicense.id",
+        "license.RealEstateLicense.license_attributes.name",
+        "license.RealEstateLicense.license_attributes.value",
+        "license.MortgageBrokerLicense.name",
+        "license.MortgageBrokerLicense.date_of_issue",
+        "license.MortgageBrokerLicense.license_type",
+        "license.MortgageBrokerLicense.id",
+        "license.MortgageBrokerLicense.license_attributes.name",
+        "license.MortgageBrokerLicense.license_attributes.value"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": ["RealEstateLicense", "MortgageBrokerLicense"],
+      "details": [
+        "license.RealEstateLicense.name",
+        "license.RealEstateLicense.date_of_issue",
+        "license.RealEstateLicense.license_type",
+        "license.RealEstateLicense.id",
+        "license.RealEstateLicense.license_attributes.name",
+        "license.RealEstateLicense.license_attributes.value",
+        "license.MortgageBrokerLicense.name",
+        "license.MortgageBrokerLicense.date_of_issue",
+        "license.MortgageBrokerLicense.license_type",
+        "license.MortgageBrokerLicense.id",
+        "license.MortgageBrokerLicense.license_attributes.name",
+        "license.MortgageBrokerLicense.license_attributes.value"
+      ]
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#0D3B66",
+      "secondary_background_color": "#E8F1FB",
+      "logo": "https://example.com/assets/insurance-logo.png",
+      "primary_attribute": "first_name",
+      "secondary_attribute": "last_name"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "professional",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": ["first_name", "last_name"]
+        },
+        "back": {
+          "fields": [
+            "license.RealEstateLicense.name",
+            "license.RealEstateLicense.date_of_issue",
+            "license.RealEstateLicense.license_type",
+            "license.RealEstateLicense.id",
+            "license.RealEstateLicense.license_attributes.name",
+            "license.RealEstateLicense.license_attributes.value",
+            "license.MortgageBrokerLicense.name",
+            "license.MortgageBrokerLicense.date_of_issue",
+            "license.MortgageBrokerLicense.license_type",
+            "license.MortgageBrokerLicense.id",
+            "license.MortgageBrokerLicense.license_attributes.name",
+            "license.MortgageBrokerLicense.license_attributes.value"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#0D3B66",
+        "secondary_color": "#E8F1FB",
+        "accent_color": "#1A78C2"
+      }
+    }
+  ]
+}
