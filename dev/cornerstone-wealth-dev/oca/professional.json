@@ -1,0 +1,178 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/professional.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "attributes": {
+      "profile.first_name": "text",
+      "profile.last_name": "text",
+      "profile.phone": "text",
+      "profile.email": "text",
+      "office_affiliation.franchise": "text",
+      "office_affiliation.operating_office": "text",
+      "office_affiliation.operating_address": "text",
+      "office_affiliation.title": "text",
+      "office_affiliation.affiliation_start_year": "text"
+    },
+    "flagged_attributes": [
+      "profile.first_name",
+      "profile.last_name",
+      "profile.phone",
+      "profile.email"
+    ]
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "profile.first_name": "utf-8",
+        "profile.last_name": "utf-8",
+        "profile.phone": "utf-8",
+        "profile.email": "utf-8",
+        "office_affiliation.franchise": "utf-8",
+        "office_affiliation.operating_office": "utf-8",
+        "office_affiliation.operating_address": "utf-8",
+        "office_affiliation.title": "utf-8",
+        "office_affiliation.affiliation_start_year": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "profile.first_name",
+        "profile.last_name",
+        "profile.phone",
+        "profile.email",
+        "office_affiliation.franchise",
+        "office_affiliation.operating_office",
+        "office_affiliation.operating_address",
+        "office_affiliation.title",
+        "office_affiliation.affiliation_start_year"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "profile.first_name",
+        "profile.last_name",
+        "office_affiliation.title"
+      ],
+      "details": [
+        "profile.phone",
+        "profile.email",
+        "office_affiliation.franchise",
+        "office_affiliation.operating_office",
+        "office_affiliation.operating_address",
+        "office_affiliation.affiliation_start_year"
+      ]
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "profile.first_name": "First Name",
+        "profile.last_name": "Last Name",
+        "profile.phone": "Phone",
+        "profile.email": "Email Address",
+        "office_affiliation.franchise": "Franchise",
+        "office_affiliation.operating_office": "Operating Office",
+        "office_affiliation.operating_address": "Operating Address",
+        "office_affiliation.title": "Title",
+        "office_affiliation.affiliation_start_year": "Affiliation Start Year"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "personal": "Personal Information",
+        "profession": "Profession Details",
+        "evidence": "Evidence Governance"
+      },
+      "attribute_categories": {
+        "profile.first_name": "personal",
+        "profile.last_name": "personal",
+        "profile.phone": "profession",
+        "profile.email": "profession",
+        "office_affiliation.franchise": "profession",
+        "office_affiliation.operating_office": "profession",
+        "office_affiliation.operating_address": "profession",
+        "office_affiliation.title": "profession",
+        "office_affiliation.affiliation_start_year": "profession"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "profile.first_name": "The professional's given name.",
+        "profile.last_name": "The professional's family name.",
+        "profile.phone": "The professional's contact telephone number.",
+        "profile.email": "The professional's contact email address.",
+        "office_affiliation.franchise": "The real estate franchise or brand the professional is affiliated with.",
+        "office_affiliation.operating_office": "The specific office or branch where the professional operates.",
+        "office_affiliation.operating_address": "The physical address of the operating office.",
+        "office_affiliation.title": "The professional's title or role within the office.",
+        "office_affiliation.affiliation_start_year": "The year the professional began their affiliation with the office."
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {
+        "office_affiliation.affiliation_start_year": "YYYY"
+      }
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {
+        "office_affiliation.affiliation_start_year": "urn:iso:std:iso:1989"
+      }
+    },
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "Professional Credential v1.0",
+      "description": "A verifiable credential representing relation of individual user to a specific property.",
+      "issuer": "Cornerstone",
+      "issuer_url": "https://example.org",
+      "credential_support_url": "https://example.org/support"
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#003366",
+      "secondary_background_color": "#E6F0FA",
+      "logo": "https://example.org/logo/person-identity.png",
+      "primary_attribute": "profile.first_name",
+      "secondary_attribute": "office_affiliation.franchise"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "Professional Credential",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": [
+            "profile.first_name",
+            "profile.last_name",
+            "profile.phone",
+            "profile.email",
+            "office_affiliation.franchise",
+            "office_affiliation.title",
+            "office_affiliation.affiliation_start_year"
+          ]
+        },
+        "back": {
+          "fields": [
+            "office_affiliation.operating_office",
+            "office_affiliation.operating_address"            
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#003366",
+        "secondary_color": "#E6F0FA",
+        "accent_color": "#0066CC"
+      }
+    }
+  ]
+}
