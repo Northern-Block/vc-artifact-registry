@@ -117,7 +117,7 @@
     {
       "type": "spec/overlays/format/1.0",
       "attribute_formats": {
-        "license_effective_date": "YYY-MM-DD",
+        "license_effective_date": "YYYY-MM-DD",
         "license_expiry_date": "YYYY-MM-DD"
       }
     },
