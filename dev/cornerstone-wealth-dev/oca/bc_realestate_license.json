@@ -142,7 +142,7 @@
       "primary_background_color": "#003366",
       "secondary_background_color": "#E6F0FA",
       "logo": "https://example.org/logo/person-identity.png",
-      "primary_attribute": "given_names",
+      "primary_attribute": "licensed_for",
       "secondary_attribute": "license_number"
     },
     {
