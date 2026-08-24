@@ -1,1 +1,43 @@
-{"id":"https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/cw-na-iv4-4f7d93/schema/homeowner-1.0.json","name":"homeowner","version":"1.0","credentialFormat":"JSON_LD","attributes":{"homeowner":{"type":"object","properties":{"year_built":{"type":"text"},"property_id":{"type":"text"},"neighbourhood":{"type":"text"},"purchase_date":{"type":"date"},"purchase_price":{"type":"text"},"property_address":{"type":"text"},"homeowner_evidence":{"type":"object","properties":{"skill_name":{"type":"text"},"pi_attested":{"type":"text"}}}}}},"governanceUrl":"https://openpropertyassociation.ca/credential-governance/homeowner-credential/"}
+{
+    "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/cw-na-iv4-4f7d93/schema/homeowner-1.0.json",
+    "name": "homeowner",
+    "version": "1.0",
+    "credentialFormat": "JSON_LD",
+    "attributes": {
+        "homeowner": {
+            "type": "object",
+            "properties": {
+                "year_built": {
+                    "type": "text"
+                },
+                "property_id": {
+                    "type": "text"
+                },
+                "neighbourhood": {
+                    "type": "text"
+                },
+                "purchase_date": {
+                    "type": "text"
+                },
+                "purchase_price": {
+                    "type": "text"
+                },
+                "property_address": {
+                    "type": "text"
+                },
+                "homeowner_evidence": {
+                    "type": "object",
+                    "properties": {
+                        "skill_name": {
+                            "type": "text"
+                        },
+                        "pi_attested": {
+                            "type": "text"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "governanceUrl": "https://openpropertyassociation.ca/credential-governance/homeowner-credential/"
+}
