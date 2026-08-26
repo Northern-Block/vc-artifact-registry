@@ -1,5 +1,5 @@
 {
-  "id": "https://northern-block.github.io/vc-artifact-registry/cs-prd/cs-prd/26-aug-iv/oca/csid.json",
+  "id": "https://artifacts.trustinfrastructure.com/cs-prd/cs-prd/26-aug-iv/oca/csid.json",
   "capture_base": {
     "type": "spec/capture_base/1.0",
     "attributes": {
