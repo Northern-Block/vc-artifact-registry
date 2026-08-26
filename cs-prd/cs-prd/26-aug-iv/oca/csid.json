@@ -8,7 +8,6 @@
       "birthdate": "DateTime",
       "verified_email": "text",
       "verified_phone": "text",
-      "postal_address": "text",
       "cornerstone_user_id": "text",
       "identity_evidence": "text"
     },
@@ -28,8 +27,7 @@
         "birthdate": "utf-8",
         "verified_email": "utf-8",
         "verified_phone": "utf-8",
-        "postal_address": "text",
-        "cornerstone_user_id": "text",
+        "cornerstone_user_id": "utf-8",
         "identity_evidence": "utf-8"
       }
     },
@@ -41,7 +39,6 @@
         "birthdate",
         "verified_email",
         "verified_phone",
-        "postal_address",
         "cornerstone_user_id",
         "identity_evidence"
       ]
@@ -57,8 +54,7 @@
       ],
       "details": [
         "identity_evidence",
-        "birthdate",
-        "postal_address"
+        "birthdate"
       ]
     },
     {
@@ -70,7 +66,6 @@
         "birthdate": "Date of Birth",
         "verified_email": "Verified Email",
         "verified_phone": "Mobile Number",
-        "postal_address": "Postal Address",
         "cornerstone_user_id": "Cornerstone User ID",
         "identity_evidence": "Identity Evidence"
       }
@@ -89,7 +84,6 @@
         "birthdate": "personal",
         "verified_email": "personal",
         "verified_phone": "personal",
-        "postal_address": "personal",
         "cornerstone_user_id": "profession",
         "identity_evidence": "profession"
       }
@@ -103,7 +97,6 @@
         "birthdate": "The person’s birth date.",
         "verified_email": "The person’s verified email address.",
         "verified_phone": "The person’s mobile number.",
-        "postal_address": "The person’s postal address.",
         "cornerstone_user_id": "The person’s cornerstone user id.",
         "identity_evidence": "Verification method used."
       }
@@ -153,7 +146,6 @@
         "back": {
           "fields": [
             "birthdate",
-            "postal_address",
             "identity_evidence"
           ]
         }
