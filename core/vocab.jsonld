@@ -775,5 +775,41 @@
   "color": {
     "id": "ext:color",
     "label": "color"
+  }, 
+  "licenseNumber": {
+    "id": "ext:licenseNumber",
+    "label": "licenseNumber"
+  },
+  "licensedFor": {
+    "id": "ext:licensedFor",
+    "label": "licensedFor"
+  },
+  "licenseStatus": {
+    "id": "ext:licenseStatus",
+    "label": "licenseStatus"
+  },
+  "parcelIdentifier": {
+    "id": "ext:parcelIdentifier",
+    "label": "parcelIdentifier"
+  },
+  "neighbourhood": {
+    "id": "ext:neighbourhood",
+    "label": "neighbourhood"
+  },
+  "skillName": {
+    "id": "ext:skillName",
+    "label": "skillName"
+  },
+  "piAttested": {
+    "id": "ext:piAttested",
+    "label": "piAttested"
+  },
+  "operatingOffice": {
+    "id": "ext:operatingOffice",
+    "label": "operatingOffice"
+  },
+  "affiliationStartYear": {
+    "id": "ext:affiliationStartYear",
+    "label": "affiliationStartYear"
   }
 }
