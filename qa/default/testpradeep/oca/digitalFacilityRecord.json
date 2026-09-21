@@ -1,5 +1,5 @@
 {
-  "id": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2023/OCABundle-untp-dfr.json",
+  "id": "https://artifacts.trustinfrastructure.com/qa/default/testpradeep/oca/digitalFacilityRecord.json",
   "capture_base": {
     "type": "spec/capture_base/1.0",
     "classification": "untp:DigitalFacilityRecord/0.7.0",
