@@ -25,8 +25,8 @@
             "relatedParty.party.registrationCountry.countryCode": "Text",
             "relatedParty.party.organisationWebsite": "Text",
             "locationInformation.plusCode": "Text",
-            "locationInformation.geoLocation.latitude": "Text",
-            "locationInformation.geoLocation.longitude": "Text",
+            "locationInformation.geoLocation.latitude": "Numeric",
+            "locationInformation.geoLocation.longitude": "Numeric",
             "address.streetAddress": "Text",
             "address.postalCode": "Text",
             "address.addressLocality": "Text",
@@ -83,8 +83,8 @@
             "facilityAlsoKnownAs.registeredId": "Text",
             "facilityAlsoKnownAs.idScheme.id": "Text",
             "facilityAlsoKnownAs.idScheme.name": "Text",
-            "locationInformation.geoBoundary.latitude": "Text",
-            "locationInformation.geoBoundary.longitude": "Text"
+            "locationInformation.geoBoundary.latitude": "Numeric",
+            "locationInformation.geoBoundary.longitude": "Numeric"
         },
         "flagged_attributes": []
     },
