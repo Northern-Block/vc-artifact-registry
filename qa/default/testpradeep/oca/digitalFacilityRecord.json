@@ -1,5 +1,5 @@
 {
-    "id": "https://Northern-Block.github.io/northern-block/local/april-issuer/oca/real-estate-license-1.0.json",
+    "id": "https://artifacts.trustinfrastructure.com/qa/default/testpradeep/oca/digitalFacilityRecord.json",
     "capture_base": {
         "type": "spec/capture_base/1.0",
         "attributes": {
