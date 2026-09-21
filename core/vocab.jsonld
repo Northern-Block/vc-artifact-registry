@@ -811,5 +811,61 @@
   "affiliationStartYear": {
     "id": "ext:affiliationStartYear",
     "label": "affiliationStartYear"
+  }, 
+  "externalId": {
+    "id": "ext:externalId",
+    "label": "externalId"
+  },
+  "countryCode": {
+    "id": "ext:countryCode",
+    "label": "countryCode"
+  },
+  "schemeId": {
+    "id": "ext:schemeId",
+    "label": "schemeId"
+  },
+  "schemeName": {
+    "id": "ext:schemeName",
+    "label": "schemeName"
+  },
+  "role": {
+    "id": "ext:role",
+    "label": "role"
+  },
+  "idSchemeId": {
+    "id": "ext:idSchemeId",
+    "label": "idSchemeId"
+  },
+  "idSchemeName": {
+    "id": "ext:idSchemeName",
+    "label": "idSchemeName"
+  },
+  "plusCode": {
+    "id": "ext:plusCode",
+    "label": "plusCode"
+  },
+  "performanceClaimId": {
+    "id": "ext:performanceClaimId",
+    "label": "performanceClaimId"
+  },
+  "performanceClaimName": {
+    "id": "ext:performanceClaimName",
+    "label": "performanceClaimName"
+  },
+  "claimDate": {
+    "id": "ext:claimDate",
+    "label": "claimDate"
+  },
+  "startDate": {
+    "id": "ext:startDate",
+    "label": "startDate"
+  },
+  "periodInformation": {
+    "id": "ext:periodInformation",
+    "label": "periodInformation"
+  },
+  "scoreCode": {
+    "id": "ext:scoreCode",
+    "label": "scoreCode"
   }
 }
