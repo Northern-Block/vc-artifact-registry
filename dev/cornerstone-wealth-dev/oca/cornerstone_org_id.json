@@ -1,0 +1,127 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/cornerstone_org_id.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "attributes": {
+      "org_name": "text",
+      "org_address": "text",
+      "org_email": "text"
+    },
+    "flagged_attributes": [
+      "org_name",
+      "org_address",
+      "org_email"
+    ]
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "org_name": "utf-8",
+        "org_address": "utf-8",
+        "org_email": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "org_name",
+        "org_address",
+        "org_email"        
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "org_name",
+        "org_email"
+    ],
+    "details": [
+        "org_address"
+      ]
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "org_name": "Given Names",
+        "org_address": "Family Name",
+        "org_email": "Mobile Number"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "personal": "Personal Information",
+        "profession": "Profession Details",
+        "evidence": "Evidence Governance"
+      },
+      "attribute_categories": {
+        "org_name": "profession",
+        "org_address": "professionl",
+        "org_email": "profession"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "org_name": "The organizations names.",
+        "org_address": "The organizations address.",
+        "org_email": "The organization email."
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {
+      }
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {
+      }
+    },
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "Cornerstone Organization ID",
+      "description": "A verifiable credential representing a cornerstone organization.",
+      "issuer": "Cornerstone",
+      "issuer_url": "https://example.org",
+      "credential_support_url": "https://example.org/support"
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#fca103",
+      "secondary_background_color": "#ffdb9c",
+      "logo": "https://example.org/logo/person-identity.png",
+      "primary_attribute": "org_name",
+      "secondary_attribute": "org_address"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "Cornerstone Organization Id",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": [
+            "org_name",
+            "org_email"
+        ]
+    },
+    "back": {
+        "fields": [
+            "org_address"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#b742ff",
+        "secondary_color": "#96c4f2",
+        "accent_color": "#0066CC"
+      }
+    }
+  ]
+}
