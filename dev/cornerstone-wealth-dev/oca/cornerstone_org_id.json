@@ -102,7 +102,7 @@
     {
       "type": "spec/overlays/card/1.0",
       "language": "en",
-      "title": "Cornerstone Organization Id",
+      "title": "Cornerstone Organization ID",
       "subtitle": "Verifiable Credential",
       "layout": {
         "front": {
