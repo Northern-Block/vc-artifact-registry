@@ -71,12 +71,12 @@
         "license_number": "License Number",
         "license_effective_date": "License Effective Date",
         "license_expiry_date": "License Expiry Date",
-        "licensed_as": "License As",
-        "licensed_for": "License For",
+        "licensed_as": "Licensed As",
+        "licensed_for": "Licensed For",
         "issuing_authority": "Issuing Authority",
-        "business_name": "Business_name",
-        "location": "location",
-        "license_status": "license Status"
+        "business_name": "Business Name",
+        "location": "Location",
+        "license_status": "License Status"
       }
     },
     {
@@ -131,8 +131,8 @@
     {
       "type": "spec/overlays/meta/1.0",
       "language": "en",
-      "name": "BC Realestate License",
-      "description": "A verifiable credential representing a cornerstone user.",
+      "name": "BC Real Estate License",
+      "description": "A verifiable credential representing a professional's business license.",
       "issuer": "Cornerstone",
       "issuer_url": "https://example.org",
       "credential_support_url": "https://example.org/support"
@@ -148,7 +148,7 @@
     {
       "type": "spec/overlays/card/1.0",
       "language": "en",
-      "title": "BC Realestate License",
+      "title": "BC Real Estate License",
       "subtitle": "Verifiable Credential",
       "layout": {
         "front": {

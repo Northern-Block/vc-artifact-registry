@@ -67,8 +67,8 @@
       "type": "spec/overlays/information/1.0",
       "language": "en",
       "attribute_information": {
-        "org_name": "The organizations names.",
-        "org_address": "The organizations address.",
+        "org_name": "The organization's name.",
+        "org_address": "The organization's address.",
         "org_email": "The organization email."
       }
     },

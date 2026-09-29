@@ -131,7 +131,7 @@
     {
       "type": "spec/overlays/card/1.0",
       "language": "en",
-      "title": "Cornerstone Id",
+      "title": "Cornerstone ID",
       "subtitle": "Verifiable Credential",
       "layout": {
         "front": {
