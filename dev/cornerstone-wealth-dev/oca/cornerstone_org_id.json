@@ -95,7 +95,7 @@
       "type": "spec/overlays/branding/1.0",
       "primary_background_color": "#fca103",
       "secondary_background_color": "#ffdb9c",
-      "logo": "https://example.org/logo/person-identity.png",
+      "logo": "https://dev.csw.nborbit.io/brand/cornerstone/keystone-metallic.png",
       "primary_attribute": "org_name",
       "secondary_attribute": "org_address"
     },
