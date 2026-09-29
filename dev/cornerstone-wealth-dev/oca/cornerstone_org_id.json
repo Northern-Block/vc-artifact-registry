@@ -44,9 +44,9 @@
       "type": "spec/overlays/label/1.0",
       "language": "en",
       "attribute_labels": {
-        "org_name": "Given Names",
-        "org_address": "Family Name",
-        "org_email": "Mobile Number"
+        "org_name": "Organization Name",
+        "org_address": "Organization Address",
+        "org_email": "Organization Email"
       }
     },
     {
@@ -118,7 +118,7 @@
         }
       },
       "style": {
-        "primary_color": "#b742ff",
+        "primary_color": "#9b0af5",
         "secondary_color": "#96c4f2",
         "accent_color": "#0066CC"
       }
