@@ -151,9 +151,9 @@
         }
       },
       "style": {
-        "primary_color": "#003366",
-        "secondary_color": "#E6F0FA",
-        "accent_color": "#0066CC"
+        "primary_color": "#009CBD",
+        "secondary_color": "#3EA3C4",
+        "accent_color": "#100B28"
       }
     }
   ]
