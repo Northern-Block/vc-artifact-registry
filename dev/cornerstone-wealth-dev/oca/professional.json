@@ -131,7 +131,7 @@
       "type": "spec/overlays/meta/1.0",
       "language": "en",
       "name": "Professional Credential v1.0",
-      "description": "A verifiable credential representing relation of individual user to a specific property.",
+      "description": "A verifiable credential representing professional details of an individual.",
       "issuer": "Cornerstone",
       "issuer_url": "https://example.org",
       "credential_support_url": "https://example.org/support"
