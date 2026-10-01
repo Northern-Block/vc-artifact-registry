@@ -1,0 +1,180 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/professional-sutton-wealth.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "attributes": {
+      "profile.first_name": "text",
+      "profile.last_name": "text",
+      "profile.phone": "text",
+      "profile.email": "text",
+      "office_affiliation.franchise": "text",
+      "office_affiliation.operating_office": "text",
+      "office_affiliation.operating_address": "text",
+      "office_affiliation.title": "text",
+      "office_affiliation.affiliation_start_year": "text"
+    },
+    "flagged_attributes": [
+      "profile.first_name",
+      "profile.last_name",
+      "profile.phone",
+      "profile.email"
+    ]
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "profile.first_name": "utf-8",
+        "profile.last_name": "utf-8",
+        "profile.phone": "utf-8",
+        "profile.email": "utf-8",
+        "office_affiliation.franchise": "utf-8",
+        "office_affiliation.operating_office": "utf-8",
+        "office_affiliation.operating_address": "utf-8",
+        "office_affiliation.title": "utf-8",
+        "office_affiliation.affiliation_start_year": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "profile.first_name",
+        "profile.last_name",
+        "profile.email",
+        "profile.phone",
+        "office_affiliation.franchise",
+        "office_affiliation.operating_office",
+        "office_affiliation.title",
+        "office_affiliation.operating_address",
+        "office_affiliation.affiliation_start_year"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "profile.first_name",
+        "profile.last_name",
+        "office_affiliation.title"
+      ],
+      "details": [
+        "profile.phone",
+        "profile.email",
+        "office_affiliation.franchise",
+        "office_affiliation.operating_office",
+        "office_affiliation.operating_address",
+        "office_affiliation.affiliation_start_year"
+      ]
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "profile.first_name": "First name",
+        "profile.last_name": "Last name",
+        "profile.email": "Email",
+        "profile.phone": "Mobile",
+        "office_affiliation.franchise": "Brokerage",
+        "office_affiliation.operating_office": "Office",
+        "office_affiliation.title": "Job title",
+        "office_affiliation.operating_address": "Office address",
+        "office_affiliation.affiliation_start_year": "Year joined this office"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "personal": "Holder",
+        "profession": "Office affiliation",
+        "evidence": "Evidence governance"
+      },
+      "attribute_categories": {
+        "profile.first_name": "personal",
+        "profile.last_name": "personal",
+        "profile.phone": "personal",
+        "profile.email": "personal",
+        "office_affiliation.franchise": "profession",
+        "office_affiliation.operating_office": "profession",
+        "office_affiliation.operating_address": "profession",
+        "office_affiliation.title": "profession",
+        "office_affiliation.affiliation_start_year": "profession"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "profile.first_name": "The professional's given name.",
+        "profile.last_name": "The professional's family name.",
+        "profile.phone": "The professional's contact telephone number.",
+        "profile.email": "The professional's contact email address.",
+        "office_affiliation.franchise": "The real estate franchise or brand the professional is affiliated with.",
+        "office_affiliation.operating_office": "The specific office or branch where the professional operates.",
+        "office_affiliation.operating_address": "The physical address of the operating office.",
+        "office_affiliation.title": "The professional's title or role within the office.",
+        "office_affiliation.affiliation_start_year": "The year the professional began their affiliation with the office."
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {
+        "office_affiliation.affiliation_start_year": "YYYY"
+      }
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {
+        "office_affiliation.affiliation_start_year": "urn:iso:std:iso:1989"
+      }
+    },
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "Professional Credential",
+      "description": "A professional's name, brokerage and office, as Sutton Wealth Management recorded them and the professional confirmed them.",
+      "issuer": "Sutton Wealth Management",
+      "issuer_url": "https://www.suttonwealth.com",
+      "credential_support_url": "https://example.org/support"
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#b01e1e",
+      "secondary_background_color": "#7b1515",
+      "logo": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/assets/sutton-wealth/logo.png",
+      "primary_attribute": "office_affiliation.franchise",
+      "secondary_attribute": "office_affiliation.title",
+      "background_image": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/assets/sutton-wealth/background.jpg",
+      "background_image_slice": "https://artifacts.trustinfrastructure.com/dev/cornerstone-wealth-dev/oca/assets/sutton-wealth/background-slice.jpg"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "Professional Credential",
+      "subtitle": "Verifiable Credential",
+      "layout": {
+        "front": {
+          "fields": [
+            "profile.first_name",
+            "profile.last_name",
+            "profile.phone",
+            "profile.email",
+            "office_affiliation.franchise",
+            "office_affiliation.title",
+            "office_affiliation.affiliation_start_year"
+          ]
+        },
+        "back": {
+          "fields": [
+            "office_affiliation.operating_office",
+            "office_affiliation.operating_address"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#b01e1e",
+        "secondary_color": "#7b1515",
+        "accent_color": "#b01e1e"
+      }
+    }
+  ]
+}
