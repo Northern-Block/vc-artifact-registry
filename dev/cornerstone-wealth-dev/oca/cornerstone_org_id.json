@@ -97,7 +97,7 @@
       "secondary_background_color": "#ffdb9c",
       "logo": "https://dev.csw.nborbit.io/brand/cornerstone/keystone-metallic.png",
       "primary_attribute": "org_name",
-      "secondary_attribute": "org_address"
+      "secondary_attribute": "org_email"
     },
     {
       "type": "spec/overlays/card/1.0",
