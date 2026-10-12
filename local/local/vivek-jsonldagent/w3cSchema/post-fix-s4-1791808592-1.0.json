@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://artifacts.trustinfrastructure.com/local/local/vivek-jsonldagent/w3cSchema/post-fix-s4-1791808592-1.0.json","title":"Thing","type":"object","properties":{"name":{"type":"string","minLength":2}},"required":["name"],"additionalProperties":false}
