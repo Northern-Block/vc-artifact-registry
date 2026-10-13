@@ -1,0 +1,58 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/local/local/vivek-jsonldagent/oca/s3-oca-1791890886.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "attributes": {
+      "name": "Text",
+      "description": "Text"
+    }
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "name": "utf-8",
+        "description": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "name",
+        "description"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "name"
+      ],
+      "details": [
+        "description"
+      ]
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "name": "name",
+        "description": "description"
+      }
+    },
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "Test OCA",
+      "description": "Generated test OCA for e2e cred-def/publish verification",
+      "issuer": "Northern Block Test Harness"
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#FFFFFF",
+      "secondary_background_color": "#000000",
+      "logo": "https://example.com/logo.png",
+      "primary_attribute": "name",
+      "secondary_attribute": "description"
+    }
+  ]
+}
