@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://artifacts.trustinfrastructure.com/local/local/vivek-jsonldagent/w3cSchema/s2-edit-setup-1791975813-1.0.json","title":"Facility","type":"object","properties":{"name":{"type":"string"},"totallyMadeUpField":{"type":"string"}},"additionalProperties":false}
