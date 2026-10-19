@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://artifacts.trustinfrastructure.com/local/local/lob-a/w3cSchema/s2-edit-setup-1792413632-1.0.json","title":"Facility","type":"object","properties":{"name":{"type":"string"},"description":{"type":"string"}},"additionalProperties":false}
