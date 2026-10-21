@@ -1,5 +1,5 @@
 {
-  "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/professional-1.1.oca.json",
+  "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/professional-1.2.oca.json",
   "capture_base": {
     "type": "spec/capture_base/1.0",
     "attributes": {
@@ -130,27 +130,26 @@
     {
       "type": "spec/overlays/meta/1.0",
       "language": "en",
-      "name": "Professional Credential",
+      "name": "Professional credential",
       "description": "A professional's name, brokerage and office, as Sutton Wealth Management recorded them and the professional confirmed them.",
       "issuer": "Sutton Wealth Management",
-      "issuer_url": "https://www.suttonwealth.com",
-      "credential_support_url": "https://example.org/support"
+      "issuer_url": "https://www.suttonwealth.com"
     },
     {
       "type": "spec/overlays/branding/1.0",
       "primary_background_color": "#66100D",
       "secondary_background_color": "#9D1F16",
-      "logo": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/logo.png",
+      "logo": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/logo.png",
       "primary_attribute": "office_affiliation.franchise",
       "secondary_attribute": "office_affiliation.title",
-      "background_image": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/background.jpg",
-      "background_image_slice": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/background-slice.jpg"
+      "background_image": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/background.jpg",
+      "background_image_slice": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/background-slice.jpg"
     },
     {
       "type": "spec/overlays/card/1.0",
       "language": "en",
-      "title": "Professional Credential",
-      "subtitle": "Verifiable Credential",
+      "title": "Professional credential",
+      "subtitle": "Verifiable credential",
       "layout": {
         "front": {
           "fields": [
@@ -180,12 +179,12 @@
       "type": "cw/overlays/card_art/1.0",
       "variant": "professional",
       "art": "red",
-      "background": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/background-red.svg",
-      "wordmark": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/sutton-wealth-wordmark.svg",
+      "background": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/background-red.svg",
+      "wordmark": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/sutton-wealth-wordmark.svg",
       "badge": {
-        "1x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/tt-badge.png",
-        "2x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/tt-badge@2x.webp",
-        "3x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.1/tt-badge@3x.webp"
+        "1x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/tt-badge.png",
+        "2x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/tt-badge@2x.webp",
+        "3x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/professional-1.2/tt-badge@3x.webp"
       },
       "lines": {
         "primary": {

@@ -1,5 +1,5 @@
 {
-  "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/bc_realestate_license-1.0.oca.json",
+  "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/bc_realestate_license-1.1.oca.json",
   "capture_base": {
     "type": "spec/capture_base/1.0",
     "attributes": {
@@ -68,24 +68,24 @@
       "type": "spec/overlays/label/1.0",
       "language": "en",
       "attribute_labels": {
-        "license_number": "License Number",
-        "license_effective_date": "License Effective Date",
-        "license_expiry_date": "License Expiry Date",
-        "licensed_as": "Licensed As",
-        "licensed_for": "Licensed For",
-        "issuing_authority": "Issuing Authority",
-        "business_name": "Business Name",
+        "license_number": "Licence number",
+        "license_effective_date": "Licence effective date",
+        "license_expiry_date": "Licence expiry date",
+        "licensed_as": "Licensed as",
+        "licensed_for": "Licensed for",
+        "issuing_authority": "Issuing authority",
+        "business_name": "Business name",
         "location": "Location",
-        "license_status": "License Status"
+        "license_status": "Licence status"
       }
     },
     {
       "type": "spec/overlays/category/1.0",
       "language": "en",
       "category_labels": {
-        "personal": "Personal Information",
-        "profession": "Profession Details",
-        "evidence": "Evidence Governance"
+        "personal": "Personal information",
+        "profession": "Profession details",
+        "evidence": "Evidence governance"
       },
       "attribute_categories": {
         "license_number": "profession",
@@ -103,15 +103,15 @@
       "type": "spec/overlays/information/1.0",
       "language": "en",
       "attribute_information": {
-        "license_number": "The person’s License Number",
-        "license_effective_date": "License valid from",
-        "license_expiry_date": "License valid till",
-        "licensed_as": "License given title",
-        "licensed_for": "License given for",
-        "issuing_authority": "Who issued the License",
-        "business_name": "Name of the business under which license taken",
-        "location": "Location of the Business",
-        "license_status": "Current Status of the License"
+        "license_number": "The person’s licence number",
+        "license_effective_date": "Licence valid from",
+        "license_expiry_date": "Licence valid till",
+        "licensed_as": "Licence given title",
+        "licensed_for": "Licence given for",
+        "issuing_authority": "Who issued the licence",
+        "business_name": "Name of the business under which licence taken",
+        "location": "Location of the business",
+        "license_status": "Current status of the licence"
       }
     },
     {
@@ -131,25 +131,24 @@
     {
       "type": "spec/overlays/meta/1.0",
       "language": "en",
-      "name": "BC Real Estate License",
-      "description": "A verifiable credential representing a professional's business license.",
+      "name": "BC real estate licence",
+      "description": "A verifiable credential representing a professional's business licence.",
       "issuer": "Sutton Wealth Management",
-      "issuer_url": "https://www.suttonwealth.com",
-      "credential_support_url": "https://example.org/support"
+      "issuer_url": "https://www.suttonwealth.com"
     },
     {
       "type": "spec/overlays/branding/1.0",
       "primary_background_color": "#66100D",
       "secondary_background_color": "#9D1F16",
-      "logo": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/keystone-metallic.png",
+      "logo": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/keystone-metallic.png",
       "primary_attribute": "licensed_for",
       "secondary_attribute": "license_number"
     },
     {
       "type": "spec/overlays/card/1.0",
       "language": "en",
-      "title": "BC Real Estate License",
-      "subtitle": "Verifiable Credential",
+      "title": "BC real estate licence",
+      "subtitle": "Verifiable credential",
       "layout": {
         "front": {
           "fields": [
@@ -179,12 +178,12 @@
       "type": "cw/overlays/card_art/1.0",
       "variant": "licence",
       "art": "red",
-      "background": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/background-red.svg",
-      "wordmark": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/sutton-wealth-wordmark.svg",
+      "background": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/background-red.svg",
+      "wordmark": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/sutton-wealth-wordmark.svg",
       "badge": {
-        "1x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/tt-badge.png",
-        "2x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/tt-badge@2x.webp",
-        "3x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.0/tt-badge@3x.webp"
+        "1x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/tt-badge.png",
+        "2x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/tt-badge@2x.webp",
+        "3x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-dev/sg-iv-3d389e/oca/assets/bc_realestate_license-1.1/tt-badge@3x.webp"
       },
       "lines": {
         "primary": {
