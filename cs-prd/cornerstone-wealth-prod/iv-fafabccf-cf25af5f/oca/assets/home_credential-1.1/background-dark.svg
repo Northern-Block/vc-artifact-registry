@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 324">
+  <defs>
+  <linearGradient id="swc-dark-sheen" gradientUnits="userSpaceOnUse" x1="557.2" y1="92.6" x2="-21.9" y2="231.6">
+    <stop offset="0.013" stop-color="#1c2023"/>
+    <stop offset="0.037" stop-color="#1f2226"/>
+    <stop offset="0.062" stop-color="#24282d"/>
+    <stop offset="0.087" stop-color="#2a2f35"/>
+    <stop offset="0.113" stop-color="#30363c"/>
+    <stop offset="0.138" stop-color="#353d44"/>
+    <stop offset="0.163" stop-color="#384048"/>
+    <stop offset="0.188" stop-color="#353c43"/>
+    <stop offset="0.212" stop-color="#31383f"/>
+    <stop offset="0.237" stop-color="#2e343b"/>
+    <stop offset="0.263" stop-color="#2b3136"/>
+    <stop offset="0.287" stop-color="#272d32"/>
+    <stop offset="0.312" stop-color="#24292e"/>
+    <stop offset="0.338" stop-color="#212529"/>
+    <stop offset="0.362" stop-color="#1d2125"/>
+    <stop offset="0.388" stop-color="#1a1e21"/>
+    <stop offset="0.412" stop-color="#1a1e22"/>
+    <stop offset="0.438" stop-color="#1a1f23"/>
+    <stop offset="0.463" stop-color="#1a1f24"/>
+    <stop offset="0.487" stop-color="#1b2126"/>
+    <stop offset="0.512" stop-color="#1d2328"/>
+    <stop offset="0.537" stop-color="#1f252b"/>
+    <stop offset="0.562" stop-color="#22282d"/>
+    <stop offset="0.588" stop-color="#242a30"/>
+    <stop offset="0.613" stop-color="#262c32"/>
+    <stop offset="0.637" stop-color="#282f34"/>
+    <stop offset="0.662" stop-color="#2b3137"/>
+    <stop offset="0.688" stop-color="#2d3439"/>
+    <stop offset="0.713" stop-color="#2f363c"/>
+    <stop offset="0.738" stop-color="#33393f"/>
+    <stop offset="0.762" stop-color="#393f45"/>
+    <stop offset="0.787" stop-color="#3f454b"/>
+    <stop offset="0.812" stop-color="#454b51"/>
+    <stop offset="0.838" stop-color="#494f54"/>
+    <stop offset="0.863" stop-color="#43494d"/>
+    <stop offset="0.887" stop-color="#3c4146"/>
+    <stop offset="0.912" stop-color="#34393d"/>
+    <stop offset="0.938" stop-color="#2d3135"/>
+    <stop offset="0.963" stop-color="#282c2f"/>
+    <stop offset="0.988" stop-color="#282c2f"/>
+  </linearGradient>
+  <linearGradient id="swc-dark-edge" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+    <stop offset=".25" stop-color="#fff" stop-opacity=".06"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".1"/>
+  </linearGradient>
+  </defs>
+  <rect width="536" height="324" rx="22" fill="url(#swc-dark-sheen)"/>
+  <rect x=".5" y=".5" width="535" height="323" rx="21.5" fill="none" stroke="url(#swc-dark-edge)"/>
+</svg>
