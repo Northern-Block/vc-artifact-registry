@@ -1,0 +1,198 @@
+{
+  "id": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/bc_realestate_license-1.1.oca.json",
+  "capture_base": {
+    "type": "spec/capture_base/1.0",
+    "attributes": {
+      "license_number": "text",
+      "license_effective_date": "text",
+      "license_expiry_date": "text",
+      "licensed_as": "text",
+      "licensed_for": "text",
+      "issuing_authority": "text",
+      "business_name": "text",
+      "location": "text",
+      "license_status": "text"
+    },
+    "flagged_attributes": [
+      "license_expiry_date",
+      "licensed_as",
+      "licensed_for"
+    ]
+  },
+  "overlays": [
+    {
+      "type": "spec/overlays/character_encoding/1.0",
+      "attribute_character_encoding": {
+        "license_number": "utf-8",
+        "license_effective_date": "utf-8",
+        "license_expiry_date": "utf-8",
+        "licensed_as": "utf-8",
+        "licensed_for": "utf-8",
+        "issuing_authority": "utf-8",
+        "business_name": "utf-8",
+        "location": "utf-8",
+        "license_status": "utf-8"
+      }
+    },
+    {
+      "type": "spec/overlays/attribute_order/1.0",
+      "order": [
+        "license_number",
+        "license_effective_date",
+        "license_expiry_date",
+        "licensed_as",
+        "licensed_for",
+        "issuing_authority",
+        "business_name",
+        "location",
+        "license_status"
+      ]
+    },
+    {
+      "type": "spec/overlays/visibility/1.0",
+      "summary": [
+        "license_effective_date",
+        "licensed_as",
+        "licensed_for",
+        "issuing_authority",
+        "business_name",
+        "license_status"
+      ],
+      "details": [
+        "license_expiry_date",
+        "license_number",
+        "location"
+      ]
+    },
+    {
+      "type": "spec/overlays/label/1.0",
+      "language": "en",
+      "attribute_labels": {
+        "license_number": "Licence number",
+        "license_effective_date": "Licence effective date",
+        "license_expiry_date": "Licence expiry date",
+        "licensed_as": "Licensed as",
+        "licensed_for": "Licensed for",
+        "issuing_authority": "Issuing authority",
+        "business_name": "Business name",
+        "location": "Location",
+        "license_status": "Licence status"
+      }
+    },
+    {
+      "type": "spec/overlays/category/1.0",
+      "language": "en",
+      "category_labels": {
+        "personal": "Personal information",
+        "profession": "Profession details",
+        "evidence": "Evidence governance"
+      },
+      "attribute_categories": {
+        "license_number": "profession",
+        "license_effective_date": "profession",
+        "license_expiry_date": "profession",
+        "licensed_as": "profession",
+        "licensed_for": "profession",
+        "issuing_authority": "profession",
+        "business_name": "profession",
+        "location": "profession",
+        "license_status": "profession"
+      }
+    },
+    {
+      "type": "spec/overlays/information/1.0",
+      "language": "en",
+      "attribute_information": {
+        "license_number": "The person’s licence number",
+        "license_effective_date": "Licence valid from",
+        "license_expiry_date": "Licence valid till",
+        "licensed_as": "Licence given title",
+        "licensed_for": "Licence given for",
+        "issuing_authority": "Who issued the licence",
+        "business_name": "Name of the business under which licence taken",
+        "location": "Location of the business",
+        "license_status": "Current status of the licence"
+      }
+    },
+    {
+      "type": "spec/overlays/format/1.0",
+      "attribute_formats": {
+        "license_effective_date": "YYYY-MM-DD",
+        "license_expiry_date": "YYYY-MM-DD"
+      }
+    },
+    {
+      "type": "spec/overlays/standard/1.0",
+      "attribute_standards": {
+        "license_effective_date": "urn:iso:std:iso:1989",
+        "license_expiry_date": "urn:iso:std:iso:1989"
+      }
+    },
+    {
+      "type": "spec/overlays/meta/1.0",
+      "language": "en",
+      "name": "BC real estate licence",
+      "description": "A verifiable credential representing a professional's business licence.",
+      "issuer": "Sutton Wealth Management",
+      "issuer_url": "https://www.suttonwealth.com"
+    },
+    {
+      "type": "spec/overlays/branding/1.0",
+      "primary_background_color": "#66100D",
+      "secondary_background_color": "#9D1F16",
+      "logo": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/keystone-metallic.png",
+      "primary_attribute": "licensed_for",
+      "secondary_attribute": "license_number"
+    },
+    {
+      "type": "spec/overlays/card/1.0",
+      "language": "en",
+      "title": "BC real estate licence",
+      "subtitle": "Verifiable credential",
+      "layout": {
+        "front": {
+          "fields": [
+            "license_number",
+            "license_effective_date",
+            "license_expiry_date",
+            "licensed_for",
+            "issuing_authority",
+            "business_name",
+            "license_status"
+          ]
+        },
+        "back": {
+          "fields": [
+            "licensed_as",
+            "location"
+          ]
+        }
+      },
+      "style": {
+        "primary_color": "#66100D",
+        "secondary_color": "#9D1F16",
+        "accent_color": "#66100D"
+      }
+    },
+    {
+      "type": "cw/overlays/card_art/1.0",
+      "variant": "licence",
+      "art": "red",
+      "background": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/background-red.svg",
+      "wordmark": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/sutton-wealth-wordmark.svg",
+      "badge": {
+        "1x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/tt-badge.png",
+        "2x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/tt-badge@2x.webp",
+        "3x": "https://artifacts.trustinfrastructure.com/qa/cornerstone-wealth-sandbox/iv-d7ff50b7-cbc211f6/oca/assets/bc_realestate_license-1.1/tt-badge@3x.webp"
+      },
+      "lines": {
+        "primary": {
+          "holder": "name"
+        },
+        "secondary": {
+          "text": "BC real estate licence"
+        }
+      }
+    }
+  ]
+}
